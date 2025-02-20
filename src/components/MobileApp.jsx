@@ -186,7 +186,7 @@ const CategoryContent = styled.div`
   height: 100%;
   overflow-y: auto;
   flex-shrink: 0;
-  padding-bottom: 60px; /* Footer height */
+  padding-bottom: 60px; 
 `;
 
 const ContentList = styled.div`
