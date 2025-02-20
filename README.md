@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Mobile App Layout Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+모바일 앱의 기본 레이아웃을 구현한 React 프로젝트입니다. 카테고리 간 슬라이드 전환, 배너 캐러셀, 무한 스크롤 등의 핵심 기능을 포함하고 있습니다.
 
-## Available Scripts
+## 주요 기능
 
-In the project directory, you can run:
+1. **카테고리 네비게이션**
+   - 상단 탭 메뉴를 통한 카테고리 전환
+   - 좌우 슬라이드로 카테고리 전환
+   - 부드러운 전환 애니메이션
 
-### `npm start`
+2. **배너 슬라이더**
+   - 자동 순환되는 배너
+   - 배너 인디케이터
+   - 외부 링크 연동
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+3. **콘텐츠 리스트**
+   - 무한 스크롤 구현
+   - 카테고리별 독립적인 스크롤 상태
+   - 로딩 상태 표시
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+4. **기타 기능**
+   - 실시간 시계 표시
+   - 스크롤 탑 버튼
+   - 반응형 레이아웃
 
-### `npm test`
+## 설치 및 실행
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+# 프로젝트 클론
+git clone [repository-url]
 
-### `npm run build`
+# 디렉토리 이동
+cd [project-directory]
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# 의존성 설치
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+# 개발 서버 실행
+npm start
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 사용된 기술
 
-### `npm run eject`
+- React
+- styled-components
+- JavaScript ES6+
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## 프로젝트 구조
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+src/
+  ├── components/
+  │   └── MobileApp.jsx    # 메인 컴포넌트
+  ├── App.js
+  └── index.js
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## 주요 컴포넌트
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### MobileApp.jsx
+- 앱의 메인 컴포넌트
+- 상태 관리 및 이벤트 핸들링
+- styled-components를 사용한 스타일링
 
-## Learn More
+## 구현된 요구사항
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. 카테고리 간 이동
+   - 탭 메뉴 클릭
+   - 좌우 슬라이드 터치
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+2. 배너 영역
+   - 최소 3개의 배너
+   - 무한 루프 동작
+   - 외부 링크 이동
 
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+3. 리스트뷰
+   - 무한 스크롤
+   - 로딩 상태 표시
